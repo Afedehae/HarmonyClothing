@@ -1,6 +1,8 @@
 :root{
-  --backgroundcolor: crimson;
+  --FirstBackgroundColor: cornsilk;
+  --SecondBackgroundColor: floralwhite;
   --FontColor: lightgray;
+  --GradientColor: top left, pink 1%, crimson 50%;
 }
 body{
   width: 100%;
@@ -17,7 +19,6 @@ a{
   font-size: 1.4em;
   color: var(--FontColor);
 }
-
 a:hover{
   transition: 1s;
   font-size: 2em;
@@ -44,7 +45,7 @@ a:hover{
   flex-direction: row;
   align-items: center;
   justify-content: flex-start;
-  background: cornsilk;
+  background: var(--FirstBackgroundColor);
   padding-left: 5em;
   background-image: url("img/Demi-Lovato-Free-PNG-Image2.png");
   background-repeat: no-repeat;
@@ -52,12 +53,26 @@ a:hover{
   background-size: contain;
 }
 
+.SectionTwo{
+  display: flex;
+  position: static;
+  width: inherit;
+  height: 45em;
+  flex-direction: row;
+  background: var(--SecondBackgroundColor);
+  padding-left: 5em;
+  background-image: url("img/CaraAtraente2.png");
+  background-repeat: no-repeat;
+  background-position: left;
+  background-size: contain;
+}
+
 .Placeholder{
-  width: max-content;
+  width: 10em;
   height: max-content;
   font-size: 15em;
-  font-family: cursive;
-  background: -webkit-linear-gradient(top left, pink 1%, crimson 70%);
+  font-family: 'Brush Script MT', cursive;
+  background: -webkit-linear-gradient(var(--GradientColor));
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   -webkit-user-select: none;
