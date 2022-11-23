@@ -1,8 +1,8 @@
 :root{
-  --FirstBackgroundColor: cornsilk;
-  --SecondBackgroundColor: floralwhite;
+  --FirstBackgroundColor: #FDECEF;
+  --SecondBackgroundColor: black;
   --FontColor: lightgray;
-  --GradientColor: top left, pink 1%, crimson 50%;
+  --GradientColor: top left, #612940, crimson 50%;
 }
 body{
   width: 100%;
@@ -13,17 +13,30 @@ body{
   font-family: serif;
 }
 
-a{
+a[id="Direcionador"]{
   transition: 1s;
   text-decoration: none;
   font-size: 1.4em;
   color: var(--FontColor);
 }
-a:hover{
+a[id="Direcionador"]:hover{
   transition: 1s;
   font-size: 2em;
   border-bottom: 1px solid white;
   color: white;
+}
+
+img[id="ImagemMostrativa"]{
+  width: 7em;
+  padding-bottom: 1em;
+}
+
+#InstaLogo{
+  display: flex;
+  justify-self: right;
+  filter: invert();
+  width: cover;
+  height: 2em;
 }
 
 .Header{
@@ -35,13 +48,16 @@ a:hover{
   align-items: center;
   justify-content: space-around;
   background: black;
+  filter: opacity(95%);
+  box-sizing: border-box;
 }
 
 .SectionOne{
   display: flex;
   position: static;
   width: inherit;
-  height: 45em;
+  height: 90vh;
+  /*45em*/
   flex-direction: row;
   align-items: center;
   justify-content: flex-start;
@@ -49,29 +65,38 @@ a:hover{
   padding-left: 5em;
   background-image: url("img/Demi-Lovato-Free-PNG-Image2.png");
   background-repeat: no-repeat;
-  background-position: right;
+  background-position: right bottom;
   background-size: contain;
+  background-position-y: 0.1em;
+  box-sizing: border-box;
 }
 
 .SectionTwo{
   display: flex;
   position: static;
   width: inherit;
-  height: 45em;
+  height: max-content;
+  min-height: 90vh;
+  /*45em*/
   flex-direction: row;
+  justify-content: flex-end;
+  align-items: flex-start;
+  padding-top: 3em;
   background: var(--SecondBackgroundColor);
-  padding-left: 5em;
-  background-image: url("img/CaraAtraente2.png");
+  background-image: url("img/CaraAtraente.png");
   background-repeat: no-repeat;
   background-position: left;
   background-size: contain;
+  background-position-x: 1em;
 }
 
 .Placeholder{
-  width: 10em;
+  display: flex;
+  flex-wrap: wrap;
+  font-size: 9vw;
+  /*7em*/
   height: max-content;
-  font-size: 15em;
-  font-family: 'Brush Script MT', cursive;
+  font-family: serif;
   background: -webkit-linear-gradient(var(--GradientColor));
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -79,4 +104,26 @@ a:hover{
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none;
+  resize: both;
+}
+
+.BoxThatContainsText{
+  display: flex;
+  flex-direction: row;
+  flex-flow: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-content: space-around;
+  width: 52em;
+  height: 50vh;
+}
+
+.TextoMostrativo{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 15em;
+  height: min-content;
+
+  filter: invert();
 }
