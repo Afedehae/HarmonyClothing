@@ -56,7 +56,7 @@ img[id="ImagemMostrativa"]{
   display: flex;
   position: static;
   width: inherit;
-  height: 90vh;
+  height: 85vh;
   /*45em*/
   flex-direction: row;
   align-items: center;
@@ -76,18 +76,28 @@ img[id="ImagemMostrativa"]{
   position: static;
   width: inherit;
   height: max-content;
-  min-height: 90vh;
+  min-height: 75vh;
   /*45em*/
   flex-direction: row;
   justify-content: flex-end;
   align-items: flex-start;
-  padding-top: 3em;
+  padding-top: 8em;
   background: var(--SecondBackgroundColor);
   background-image: url("img/CaraAtraente.png");
   background-repeat: no-repeat;
   background-position: left;
   background-size: contain;
   background-position-x: 1em;
+}
+
+.SectionThree{
+  display: flex;
+  position: static;
+  width: inherit;
+  height: 80vh;
+  flex-direction: row;
+  background: var(--FirstBackgroundColor);
+
 }
 
 .Placeholder{
