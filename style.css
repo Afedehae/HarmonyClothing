@@ -25,6 +25,10 @@ a[id="Direcionador"]:hover{
   border-bottom: 1px solid white;
   color: white;
 }
+a[id="DirecionadorFooter"]{
+  color: var(--FontColor);
+  text-decoration: none;
+}
 
 img[id="ImagemMostrativa"]{
   width: 7em;
@@ -156,7 +160,7 @@ textarea:focus{
   align-items: flex-start;
   padding-top: 5em;
   background: var(--SecondBackgroundColor);
-  background-image: url("img/LogoEmpresa.jpeg");
+  background-image: url("img/LogoEmpresa.png");
   background-size: 30em;
   background-repeat: no-repeat;
   background-position: left;
@@ -183,6 +187,18 @@ textarea:focus{
   justify-content: space-around;
   align-content: space-around;
   background: var(--SecondBackgroundColor);
+}
+
+.Footer{
+  display: flex;
+  width: 100%;
+  height: 3.5em;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  background: black;
+  filter: opacity(95%);
+  box-sizing: border-box;
 }
 
 .Placeholder{
